@@ -26,8 +26,10 @@ export default function Counter() {
     <InputGroup 
     data-bs-theme="dark"
     onChange={(e)=>e.target.value===""?setRange(Number(1)):setRange(e.target.value)}
-    className="mb-3">
+    className="mb-3 ms-1 me-1">
         <Form.Control
+        type='number'
+        className='no-spinners'
           placeholder="Enter The Range"
         />
       </InputGroup>
